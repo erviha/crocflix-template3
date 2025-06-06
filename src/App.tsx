@@ -34,6 +34,10 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleWhatsAppClick = () => {
+    window.open('https://web.whatsapp.com/send/?phone=+5513991828682&text=%2AVim+pelo+site%2C+quero+fazer+um+teste+gr%C3%A1tis.+%2A', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900 text-white overflow-x-hidden">
       {/* Header */}
@@ -62,7 +66,10 @@ function App() {
               <a href="#plans" className="text-white hover:text-emerald-400 transition-all duration-300 font-medium">
                 Planos
               </a>
-              <button className="bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button 
+                onClick={handleWhatsAppClick}
+                className="bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
                 Teste Grátis
               </button>
             </nav>
@@ -89,7 +96,10 @@ function App() {
                 <a href="#plans" className="text-white hover:text-emerald-400 transition-colors font-medium">
                   Planos
                 </a>
-                <button className="bg-gradient-to-r from-emerald-500 to-green-500 text-white px-6 py-3 rounded-full font-semibold w-full">
+                <button 
+                  onClick={handleWhatsAppClick}
+                  className="bg-gradient-to-r from-emerald-500 to-green-500 text-white px-6 py-3 rounded-full font-semibold w-full"
+                >
                   Teste Grátis
                 </button>
               </div>
@@ -127,7 +137,10 @@ function App() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                <button className="group bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-emerald-500/25 flex items-center justify-center">
+                <button 
+                  onClick={handleWhatsAppClick}
+                  className="group bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-emerald-500/25 flex items-center justify-center"
+                >
                   QUERO ACESSAR O CROCFLIX
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                 </button>
@@ -391,7 +404,10 @@ function App() {
                 </li>
               </ul>
               
-              <button className="w-full bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white py-4 rounded-full font-bold text-lg transition-all duration-300 transform group-hover:scale-105 shadow-lg">
+              <button 
+                onClick={handleWhatsAppClick}
+                className="w-full bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white py-4 rounded-full font-bold text-lg transition-all duration-300 transform group-hover:scale-105 shadow-lg"
+              >
                 SOLICITAR SEU TESTE
               </button>
             </div>
@@ -440,7 +456,10 @@ function App() {
                 </li>
               </ul>
               
-              <button className="w-full bg-white hover:bg-gray-100 text-emerald-600 py-4 rounded-full font-bold text-lg transition-all duration-300 transform group-hover:scale-105 shadow-lg">
+              <button 
+                onClick={handleWhatsAppClick}
+                className="w-full bg-white hover:bg-gray-100 text-emerald-600 py-4 rounded-full font-bold text-lg transition-all duration-300 transform group-hover:scale-105 shadow-lg"
+              >
                 SOLICITAR SEU TESTE
               </button>
             </div>
@@ -482,7 +501,10 @@ function App() {
                 </li>
               </ul>
               
-              <button className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white py-4 rounded-full font-bold text-lg transition-all duration-300 transform group-hover:scale-105 shadow-lg">
+              <button 
+                onClick={handleWhatsAppClick}
+                className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white py-4 rounded-full font-bold text-lg transition-all duration-300 transform group-hover:scale-105 shadow-lg"
+              >
                 SOLICITAR SEU TESTE
               </button>
             </div>
@@ -497,7 +519,10 @@ function App() {
               <p className="text-gray-400 mb-6 text-lg">
                 Experimente todos os recursos do CrocFlix sem compromisso. Cancele quando quiser.
               </p>
-              <button className="bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button 
+                onClick={handleWhatsAppClick}
+                className="bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
                 COMEÇAR TESTE GRÁTIS NO CROCFLIX
               </button>
             </div>
