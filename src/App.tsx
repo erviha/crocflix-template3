@@ -373,7 +373,7 @@ function App() {
                 <div className="bg-gradient-to-r from-emerald-500/20 to-green-500/20 rounded-full px-4 py-2 inline-block mb-4">
                   <span className="text-emerald-400 font-semibold">Plano Mensal</span>
                 </div>
-                <div className="text-5xl font-black text-white mb-2">R$12,00</div>
+                <div className="text-5xl font-black text-white mb-2">R$29,99</div>
                 <div className="text-gray-400">por mês</div>
               </div>
               
@@ -436,7 +436,7 @@ function App() {
                 </li>
                 <li className="flex items-center space-x-3">
                   <Check className="text-emerald-300 flex-shrink-0" size={20} />
-                  <span className="text-white font-semibold">3 Telas</span>
+                  <span className="text-white font-semibold">2 Telas</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <Check className="text-emerald-300 flex-shrink-0" size={20} />
@@ -470,7 +470,7 @@ function App() {
                 <div className="bg-gradient-to-r from-teal-500/20 to-cyan-500/20 rounded-full px-4 py-2 inline-block mb-4">
                   <span className="text-teal-400 font-semibold">Plano Semestral</span>
                 </div>
-                <div className="text-5xl font-black text-white mb-2">R$139,99</div>
+                <div className="text-5xl font-black text-white mb-2">R$189,99</div>
                 <div className="text-gray-400">6 meses</div>
               </div>
               
